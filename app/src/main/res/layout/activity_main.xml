@@ -14,7 +14,7 @@
         android:textColor="#000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PhoneBook"
+        android:text="Mentor Matching"
         android:textSize="32sp"
         android:layout_marginTop="32dp"
         android:layout_gravity="center"/>
@@ -29,29 +29,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000"
-        android:hint="Email"/>
+        android:hint="Major"/>
     <EditText
         android:id="@+id/phone"
         android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Phone"/>
+        android:hint="Interests"/>
 
     <Button
         android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
+        android:text="Submit"
         android:layout_gravity="center"/>
-
-    <TextView
-        android:id="@+id/displayMessage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:textColor="#000"
-        android:text="Data from server will appear here !!"
-        android:layout_marginTop="20dp"
-        android:textSize="20sp"/>
 
 </LinearLayout>
