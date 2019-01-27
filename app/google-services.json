@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "285840193865",
+    "firebase_url": "https://phonebook-edeae.firebaseio.com",
+    "project_id": "phonebook-edeae",
+    "storage_bucket": "phonebook-edeae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285840193865:android:72c740cacea8aae7",
+        "android_client_info": {
+          "package_name": "com.example.margalitnoa.phonebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285840193865-ht4eiepcc36km5d55r9gracnp3t6b9ji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.margalitnoa.phonebook",
+            "certificate_hash": "d11352947554c92a4565e19acfffcfa4b385773a"
+          }
+        },
+        {
+          "client_id": "285840193865-tkemduf75cnitbk8uiog2i1mi62adtaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkBlLVZSvNxmrubYjxoix0-UxVnQxyRig"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285840193865-tkemduf75cnitbk8uiog2i1mi62adtaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
