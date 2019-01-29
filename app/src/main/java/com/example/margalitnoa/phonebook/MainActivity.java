@@ -23,12 +23,13 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     private static final String NAME_KEY = "Name";
+    private static final String MAJOR_KEY = "Major";
+    private static final String INTEREST_KEY = "Interests";
     private static final String EMAIL_KEY = "Email";
-    private static final String PHONE_KEY = "Phone";
     FirebaseFirestore db;
     TextView textDisplay;
     TextView message;
-    EditText name, email, phone;
+    EditText name, major, interests, email;
     Button save;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +37,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         db = FirebaseFirestore.getInstance();
         textDisplay = findViewById(R.id.textDisplay);
-        save    = findViewById(R.id.save);
-
+        save = findViewById(R.id.save);
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,17 +48,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addNewContact(){
-        save    = findViewById(R.id.save);
-        name    = findViewById(R.id.name);
-        email   = findViewById(R.id.email);
-        phone   = findViewById(R.id.phone);
+        save = findViewById(R.id.save);
+        name = findViewById(R.id.name);
+        major = findViewById(R.id.major);
+        interests = findViewById(R.id.interests);
+        email = findViewById(R.id.email);
         String mName = name.getText().toString();
+        String mMajor = major.getText().toString();
+        String mInterests = interests.getText().toString();
         String mEmail = email.getText().toString();
-        String mPhone = phone.getText().toString();
         Map<String, Object>newContact = new HashMap<>();
         newContact.put(NAME_KEY, mName);
+        newContact.put(MAJOR_KEY, mMajor);
+        newContact.put(INTEREST_KEY, mInterests);
         newContact.put(EMAIL_KEY, mEmail);
-        newContact.put(PHONE_KEY, mPhone);
         db.collection("PhoneBook").document("Contacts").set(newContact)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

@@ -25,40 +25,6 @@
         android:textColor="#000"
         android:hint="Name"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:orientation="horizontal">
-
-        <CheckBox
-            android:id="@+id/year1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Freshman" />
-
-        <CheckBox
-            android:id="@+id/year2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Sophomore" />
-
-        <CheckBox
-            android:id="@+id/year3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Junior" />
-
-        <CheckBox
-            android:id="@+id/year4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Senior" />
-    </LinearLayout>
-
     <EditText
         android:id="@+id/major"
         android:layout_width="match_parent"
@@ -67,7 +33,7 @@
         android:textColor="#000" />
 
     <EditText
-        android:id="@+id/phone"
+        android:id="@+id/interests"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Interests"
@@ -78,14 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress" />
-
-    <CheckBox
-        android:id="@+id/Mentor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Check if you want to be a Mentor" />
+        android:hint="Email" />
 
     <Button
         android:id="@+id/save"
