@@ -11,13 +11,13 @@
 
     <TextView
         android:id="@+id/textDisplay"
-        android:textColor="#000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mentor Matching"
-        android:textSize="32sp"
+        android:layout_gravity="center"
         android:layout_marginTop="32dp"
-        android:layout_gravity="center"/>
+        android:text="Contact Info"
+        android:textColor="#000"
+        android:textSize="32sp" />
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
@@ -30,18 +30,19 @@
         android:layout_height="wrap_content"
         android:textColor="#000"
         android:hint="Major"/>
+
     <EditText
         android:id="@+id/phone"
-        android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Interests"/>
+        android:hint="Phone Number"
+        android:textColor="#000" />
 
     <Button
         android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:text="Submit" />
 
 </LinearLayout>
